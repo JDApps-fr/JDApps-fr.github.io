@@ -1,0 +1,9 @@
+title: JDApps
+email: contact@jdapps.fr
+author: Julien DRECQ
+description: Bienvenue sur JDApps.fr
+url: https://JDApps-fr.github.io
+collections:
+  apps:
+    output: true
+    permalink: /applications/:slug

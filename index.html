@@ -1,0 +1,29 @@
+---
+permalink: /
+layout: default
+title: Accueil
+---
+
+<div class="container">
+    <div class="row mt">
+        <div class="col-lg-6 col-lg-offset-3 centered">
+            <h3>Applications</h3>
+            <hr />
+        </div>
+    </div>
+
+    <div class="row mt centered">
+    {% assign apps = site.apps | sort: "sequence" %}
+    {% for app in apps %}
+        <div class="col-lg-4 col-md-4 col-sm-4 bt">
+            <p>{{ app.title }}</p>
+            <a href="{{ app.url }}">
+                <img class="img-responsive center-block"
+                     src="/assets/images/apps/{{ app.slug }}/app.png"
+                     alt="{{ app.title }}"
+                     width="150" height="150" />
+            </a>
+        </div>
+    {% endfor %}
+    </div>
+</div>
