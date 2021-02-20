@@ -5,14 +5,14 @@ layout: default
 <div class="container pt">
     <div class="row mt">
         <div class="col-lg-6 col-lg-offset-3">
-            <h3 class="centered">{{ page.title }}</h3>
+            <h3 class="centered">{{ page.name }}</h3>
             <hr />
             <p>
                 {{ content }}
             </p>
             <p class="centered">
                 <a href="/applications/{{ page.slug }}">
-                    <img class="img-responsive center-block" src="/assets/images/apps/{{ page.slug }}/app.png" alt="{{ page.title }}" width="150" height="150" />
+                    <img class="img-responsive center-block" src="/assets/images/apps/{{ page.slug }}/app.png" alt="Application {{ page.name }}" width="150" height="150" />
                 </a>
             </p>
             {% if page.link_app_store %}
@@ -20,7 +20,7 @@ layout: default
                     <a target="_blank" href="{{ page.link_app_store }}">
                         <img class="img-responsive center-block"
                              src="/assets/images/app_store.svg"
-                             alt="iOS {{ page.title }}" />
+                             alt="iOS {{ page.name }}" />
                     </a>
                 </p>
             {% endif %}
@@ -29,7 +29,7 @@ layout: default
                     <a target="_blank" href="{{ page.link_google_play }}">
                         <img class="img-responsive center-block"
                              src="/assets/images/google_play.png"
-                             alt="Android {{ page.title }}"
+                             alt="Android {{ page.name }}"
                              width="135" height="40"/>
                     </a>
                 </p>
@@ -40,7 +40,7 @@ layout: default
     <div class="row mt centered">
         {% for screen in page.screenshots %}
             <div class="col-lg-4 col-md-4 col-sm-4 bt">
-                <img class="img-responsive center-block" src="/assets/images/apps/{{ page.slug }}/screenshots/{{ screen }}" alt="{{ page.title }}" width="300" height="200" />
+                <img class="img-responsive center-block" src="/assets/images/apps/{{ page.slug }}/screenshots/{{ screen }}" alt="Screen{{ forloop.index }} {{ page.name }}" width="300" height="200" />
             </div>
         {% endfor %}
     </div>

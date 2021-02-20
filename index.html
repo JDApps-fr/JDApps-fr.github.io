@@ -1,7 +1,9 @@
 ---
 permalink: /
 layout: default
-title: Accueil
+title: Applications iOS sur l'App Store
+description: Découvrez mes applications iOS pour iPhone et iPad, disponibles sur l'App Store.
+robots: index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1
 ---
 
 <div class="container">
@@ -16,11 +18,11 @@ title: Accueil
     {% assign apps = site.apps | sort: "sequence" %}
     {% for app in apps %}
         <div class="col-lg-4 col-md-4 col-sm-4 bt">
-            <p>{{ app.title }}</p>
+            <p>{{ app.name }}</p>
             <a href="{{ app.url }}">
                 <img class="img-responsive center-block"
                      src="/assets/images/apps/{{ app.slug }}/app.png"
-                     alt="{{ app.title }}"
+                     alt="Application {{ app.name }}"
                      width="150" height="150" />
             </a>
         </div>

@@ -1,7 +1,5 @@
 title: JDApps
 email: contact@jdapps.fr
-author: Julien DRECQ
-description: Bienvenue sur JDApps.fr
 url: https://www.jdapps.fr
 plugins:
   - jekyll-sitemap
