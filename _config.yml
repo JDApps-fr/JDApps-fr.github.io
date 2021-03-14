@@ -3,6 +3,7 @@ email: contact@jdapps.fr
 url: https://www.jdapps.fr
 plugins:
   - jekyll-sitemap
+  - jekyll-redirect-from
 collections:
   apps:
     output: true
