@@ -24,6 +24,15 @@ layout: default
                     </a>
                 </p>
             {% endif %}
+            {% if page.link_app_store_en %}
+            <p>
+                <a target="_blank" href="{{ page.link_app_store_en }}">
+                    <img class="img-responsive center-block"
+                         src="/assets/images/app_store_en.png"
+                         alt="iOS {{ page.name }}" />
+                </a>
+            </p>
+            {% endif %}
             {% if page.link_google_play %}
                 <p>
                     <a target="_blank" href="{{ page.link_google_play }}">
